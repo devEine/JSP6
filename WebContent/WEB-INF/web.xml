@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>JSP6</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>itwillServlet</servlet-name>
+  	<servlet-class>com.itwillbs.servlet.itwillServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>itwillServlet</servlet-name>
+  	<url-pattern>/busan.com</url-pattern>
+  	<!--url-pattern의 주소가 실행되면 ItwillServelt자바 파일이 실행됨 (매핑)  -->
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>MyServlet</servlet-name>
+  	<servlet-class>com.itwillbs.servlet.MyServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>MyServlet</servlet-name>
+  	<url-pattern>/MyServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>TestServlet2</servlet-name>
+  	<servlet-class>com.itwillbs.servlet.TestServlet2</servlet-class>
+  </servlet>
+
+	<servlet-mapping>
+		<servlet-name>TestServlet2</servlet-name>
+		<url-pattern>/test</url-pattern>
+	</servlet-mapping> 
+	 
+</web-app>
